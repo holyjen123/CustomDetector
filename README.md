@@ -35,6 +35,7 @@ cd ~/object_detection/images
 python ~/object_detection/xml_to_csv.py
 cd ~/object_detection
 ```
+This creates two files: test_labels and train_labels
 
 In generate_tfrecords.py file, change row_label to your own category names
 
@@ -44,3 +45,4 @@ python generate_tfrecord.py --csv_input=~/object_detection/images/train_labels.c
 
 python generate_tfrecord.py --csv_input=~/object_detection/images/test_labels.csv --image_dir=~/object_detection/images/images/test --output_path=test.record
 ```
+This generates train.record and test.record
