@@ -20,7 +20,7 @@ conda activate object_detection
 conda search pycocotools
 ```
 
-Download MODELS
+Download [models](https://github.com/tensorflow/models)
 ```bash
 mv ~/Downloads/models-master ./models
 
