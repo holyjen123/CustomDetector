@@ -10,7 +10,10 @@ cd object_detection
 export PATH="$PATH:~?opt/anaconda3/bin"
 ```
 
-Define the dependencies pacakages in the YAML file
+Define the dependencies pacakages in the yaml file
+(which I already have done for you [here](https://github.com/holyjen123/CustomDetector/blob/master/env_setting/objection_detection.yaml))
+
+Create the environment
 ```bash
 conda env create -f object_detection.yaml
 conda activate object_detection
