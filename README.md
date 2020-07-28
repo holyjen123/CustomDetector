@@ -7,7 +7,7 @@ Obtain a reasonable amount of images for each category
 
 Create a new file named images in the object_detection directory and move all images into there
 
-Transform resolution of images using this FILE
+Transform resolution of images using this [file](https://github.com/holyjen123/object_detection/blob/master/transform_image_resolution.py)
 ```bash
 python transform_image_resolution.py -d ~/object_detection/images/ -s 800 600
 
