@@ -48,7 +48,7 @@ python generate_tfrecord.py --csv_input=~/object_detection/images/test_labels.cs
 This generates train.record and test.record
 
 ## Training and Testing Model
-Use LABELMAP.JSON and change items to category names
+Use [labelmap.json](https://github.com/holyjen123/object_detection/blob/master/labelmap.json) and change items to category names
 
 ```bash
 cd ~/object_detection
