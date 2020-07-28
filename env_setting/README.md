@@ -1,7 +1,7 @@
 # Setting Up Environment
 ## Tutorial
 
-install anaconda using this LINK
+install anaconda using this [link](https://www.anaconda.com/products/individual)
 ```bash
 cd ~/
 mkdir object_detection
