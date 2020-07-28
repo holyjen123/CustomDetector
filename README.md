@@ -56,7 +56,8 @@ mkir label
 mv ~/Downloads/labelmap.json ./label
 ```
 
-Download this FILE
+Use this [file](https://github.com/holyjen123/object_detection/blob/master/faster_rcnn_inception_v2_pets.config)
+
 Change /Users/hollyjen123/object_detection/ to your own directory and make necessary changes accordingly
 ```bash
 cd ~/object_detection
@@ -67,6 +68,7 @@ python models/research/object_detection/model_main.py --logtostderr --model_dir=
 ```
 
 After training, create model
+
 Note to change XXXX to your highest file
 
 ```bash
@@ -77,5 +79,6 @@ python models/research/object_detection/export_inference_graph.py \
 --output_directory inference_graph
 ```
 
-Use testing CODE to check quality of your model
+Use testing [code](https://github.com/holyjen123/object_detection/blob/master/detectionTester.py) to check quality of your model
+
 Make sure to change necessary parts in the code
