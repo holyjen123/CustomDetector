@@ -1,0 +1,39 @@
+name: object_detection
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - numpy
+  - pandas
+  - scipy
+  - jupyterlab
+  - gensim
+  - keras
+  - lime
+  - opencv
+  - python=3.7.*
+  - pygam
+  - scikit-learn
+  - scikit-image
+  - scipy
+  - seaborn
+  - tensorflow=1.15
+  - matplotlib
+  - xgboost
+  - xlrd
+  - PyYAML
+  - black
+  - sqlparse
+  - graphviz
+  - pip
+  - imutils
+  - easydict
+  - pip:
+    - vtreat
+    - data_algebra
+    - wvpy
+    - scikit-image
+    - easydict
+    - Cython
+    - pycocotools
+    - tensorflow-object-detection-api
