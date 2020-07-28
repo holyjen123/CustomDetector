@@ -46,3 +46,36 @@ python generate_tfrecord.py --csv_input=~/object_detection/images/train_labels.c
 python generate_tfrecord.py --csv_input=~/object_detection/images/test_labels.csv --image_dir=~/object_detection/images/images/test --output_path=test.record
 ```
 This generates train.record and test.record
+
+## Training and Testing Model
+Use LABELMAP.JSON and change items to category names
+
+```bash
+cd ~/object_detection
+mkir label
+mv ~/Downloads/labelmap.json ./label
+```
+
+Download this FILE
+Change /Users/hollyjen123/object_detection/ to your own directory and make necessary changes accordingly
+```bash
+cd ~/object_detection
+mv ~/Downloads/
+mkdir train_model
+
+python models/research/object_detection/model_main.py --logtostderr --model_dir=train_model/ --pipeline_config_path=faster_rcnn_inception_v2_pets.config
+```
+
+After training, create model
+Note to change XXXX to your highest file
+
+```bash
+python models/research/object_detection/export_inference_graph.py \
+--input_type image_tensor \
+--pipeline_config_path faster_rcnn_inception_v2_pets.config \
+--trained_checkpoint_prefix train_model/model.ckpt-XXXX \
+--output_directory inference_graph
+```
+
+Use testing CODE to check quality of your model
+Make sure to change necessary parts in the code
