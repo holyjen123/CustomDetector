@@ -29,10 +29,10 @@ make qt5py3;./labelImg.py
 Open up each train and test folders and use the "Create RectBox" button to label 
 When saving images, they will appear as XML files
 
-Create TFRecords using SCRIPT and SCRIPT
+Create TFRecords using [xml_to_csv.py](https://github.com/holyjen123/object_detection/blob/master/xml_to_csv.py) and [generate_tfrecord.py](https://github.com/holyjen123/object_detection/blob/master/generate_tfrecord.py)
 ```bash
 cd ~/object_detection/images
-python xml_to_csv.py
+python ~/object_detection/xml_to_csv.py
 cd ~/object_detection
 ```
 
