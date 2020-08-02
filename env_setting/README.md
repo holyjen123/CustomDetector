@@ -25,8 +25,8 @@ Download [models](https://github.com/tensorflow/models)
 mv ~/Downloads/models-master ./models
 
 echo $PYTHONPATH 
-cd ~/object_detection/models/research/
-export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim 
+cd ~/object_detection/models/
+export PYTHONPATH=$PYTHONPATH:`pwd`: `pwd`/research :`pwd`/research/slim 
 
 cd ~/object_detection/models/research/object_detection/packages/tf1
 python setup.py build
