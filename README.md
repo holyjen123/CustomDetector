@@ -72,11 +72,7 @@ After training, create model
 Note to change XXXX to your highest file
 
 ```bash
-python models/research/object_detection/export_inference_graph.py \
---input_type image_tensor \
---pipeline_config_path faster_rcnn_inception_v2_pets.config \
---trained_checkpoint_prefix train_model/model.ckpt-XXXX \
---output_directory inference_graph
+python models/research/object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix train_model/model.ckpt-XXXX --output_directory inference_graph
 ```
 
 Use testing [code](https://github.com/holyjen123/object_detection/blob/master/detectionTester.py) to check quality of your model
